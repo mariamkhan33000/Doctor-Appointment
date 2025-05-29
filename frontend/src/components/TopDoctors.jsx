@@ -6,7 +6,7 @@ const TopDoctors = () => {
 
     const navigate = useNavigate()
     const {doctors} = useContext(AppContext)
-    
+
   return (
     <div className='flex flex-col items-center gap-4 my-16 text-gray-900 md:mx-10'>
         <h1 className='text-3xl font-medium'>Top Doctors to Book</h1>
@@ -27,7 +27,7 @@ const TopDoctors = () => {
                 ))
             }
         </div>
-        <button className='bg-blue-100 text-gray-600 px-12 py-3 rounded-full'>more</button>
+        <button onClick={() => {navigate('/doctors'); scroll(0,0)}} className='bg-blue-100 text-gray-600 px-12 py-3 rounded-full'>more</button>
     </div>
   )
 }
